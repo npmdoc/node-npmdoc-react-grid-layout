@@ -1,1 +1,38 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-react-grid-layout",     "homepage": "https://github.com/npmdoc/node-npmdoc-react-grid-layout",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-react-grid-layout.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [react-grid-layout (v0.14.6)](https://github.com/STRML/react-grid-layout)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-grid-layout.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-grid-layout) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-grid-layout.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-grid-layout)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-react-grid-layout",
+    "keywords": [
+        "documentation",
+        "react-grid-layout"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_react_grid_layout.js",
+    "name": "npmdoc-react-grid-layout",
+    "nameAlias": "npmdoc_react_grid_layout",
+    "nameOriginal": "npmdoc-react-grid-layout",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-react-grid-layout.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "2017.4.23"
+}
