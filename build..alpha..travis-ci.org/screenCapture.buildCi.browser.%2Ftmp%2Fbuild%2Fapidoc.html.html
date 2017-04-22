@@ -1,0 +1,3067 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/STRML/react-grid-layout">react-grid-layout (v0.14.6)</a>
+</h1>
+<h4>A draggable and resizable grid layout with responsive breakpoints, for React.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout">module react-grid-layout</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.react-grid-layout">
+            function <span class="apidocSignatureSpan"></span>react-grid-layout
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.WidthProvider">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>WidthProvider
+            <span class="apidocSignatureSpan">(ComposedComponent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.autoSize">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.autoSize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.className">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.containerPadding">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.containerPadding
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.margin">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.margin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.style">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.width">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive.defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive.utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-grid-layout.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.Responsive">module react-grid-layout.Responsive</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.Responsive">
+            function <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.Responsive.defaultProps">module react-grid-layout.Responsive.defaultProps</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onBreakpointChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onBreakpointChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onWidthChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onWidthChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>breakpoints</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>cols</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>layouts</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.Responsive.propTypes">module react-grid-layout.Responsive.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.breakpoint">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>breakpoint
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.breakpoints">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>breakpoints
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.cols">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>cols
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.layouts">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>layouts
+            <span class="apidocSignatureSpan">(props, propName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.onBreakpointChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onBreakpointChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.onWidthChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onWidthChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.propTypes.width">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.Responsive.prototype">module react-grid-layout.Responsive.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.prototype.generateInitialState">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>generateInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.prototype.onWidthChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>onWidthChange
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.prototype.render">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.Responsive.utils">module react-grid-layout.Responsive.utils</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.utils.findOrGenerateResponsiveLayout">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>findOrGenerateResponsiveLayout
+            <span class="apidocSignatureSpan">(layouts, breakpoints, breakpoint, lastBreakpoint, cols, verticalCompact)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.utils.getBreakpointFromWidth">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>getBreakpointFromWidth
+            <span class="apidocSignatureSpan">(breakpoints, width)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.utils.getColsFromBreakpoint">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>getColsFromBreakpoint
+            <span class="apidocSignatureSpan">(breakpoint, cols)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.Responsive.utils.sortBreakpoints">
+            function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>sortBreakpoints
+            <span class="apidocSignatureSpan">(breakpoints)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.defaultProps">module react-grid-layout.defaultProps</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>autoSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>isDraggable</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>isResizable</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>useCSSTransforms</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>verticalCompact</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onDrag">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDrag
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onDragStart">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDragStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onDragStop">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDragStop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onResize">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onResizeStart">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResizeStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.defaultProps.onResizeStop">
+            function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResizeStop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>cols</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>maxRows</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>rowHeight</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>layout</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>margin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>className</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes">module react-grid-layout.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.autoSize">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>autoSize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.children">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>children
+            <span class="apidocSignatureSpan">(props, propName, _componentName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.className">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.cols">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>cols
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.containerPadding">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>containerPadding
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.draggableCancel">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>draggableCancel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.draggableHandle">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>draggableHandle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.isDraggable">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>isDraggable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.isResizable">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>isResizable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.layout">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>layout
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.margin">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>margin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.maxRows">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>maxRows
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onDrag">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDrag
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onDragStart">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDragStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onDragStop">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDragStop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onResize">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onResizeStart">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResizeStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onResizeStop">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResizeStop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.rowHeight">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>rowHeight
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.style">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.useCSSTransforms">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>useCSSTransforms
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.verticalCompact">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>verticalCompact
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.width">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.autoSize">module react-grid-layout.propTypes.autoSize</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.autoSize.autoSize">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>autoSize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.autoSize.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.autoSize.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.className">module react-grid-layout.propTypes.className</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.className.className">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.className.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.className.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.containerPadding">module react-grid-layout.propTypes.containerPadding</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.containerPadding.containerPadding">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>containerPadding
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.containerPadding.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.containerPadding.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.margin">module react-grid-layout.propTypes.margin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.margin.margin">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>margin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.margin.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.margin.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.onLayoutChange">module react-grid-layout.propTypes.onLayoutChange</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange.onLayoutChange">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onLayoutChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.onLayoutChange.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.style">module react-grid-layout.propTypes.style</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.style.style">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.style.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.style.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.propTypes.width">module react-grid-layout.propTypes.width</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.width.width">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.propTypes.width.isRequired">
+            function <span class="apidocSignatureSpan">react-grid-layout.propTypes.width.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-grid-layout.utils">module react-grid-layout.utils</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-grid-layout.utils.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.autoBindHandlers">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>autoBindHandlers
+            <span class="apidocSignatureSpan">(el, fns)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.bottom">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>bottom
+            <span class="apidocSignatureSpan">(layout)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.childrenEqual">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>childrenEqual
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.cloneLayout">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>cloneLayout
+            <span class="apidocSignatureSpan">(layout)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.cloneLayoutItem">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>cloneLayoutItem
+            <span class="apidocSignatureSpan">(layoutItem)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.collides">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>collides
+            <span class="apidocSignatureSpan">(l1, l2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.compact">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>compact
+            <span class="apidocSignatureSpan">(layout, verticalCompact)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.compactItem">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>compactItem
+            <span class="apidocSignatureSpan">(compareWith, l, verticalCompact)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.correctBounds">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>correctBounds
+            <span class="apidocSignatureSpan">(layout, bounds)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.getAllCollisions">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getAllCollisions
+            <span class="apidocSignatureSpan">(layout, layoutItem)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.getFirstCollision">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getFirstCollision
+            <span class="apidocSignatureSpan">(layout, layoutItem)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.getLayoutItem">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getLayoutItem
+            <span class="apidocSignatureSpan">(layout, id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.getStatics">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getStatics
+            <span class="apidocSignatureSpan">(layout)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.moveElement">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>moveElement
+            <span class="apidocSignatureSpan">(layout, l, x, y, isUserAction)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.moveElementAwayFromCollision">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>moveElementAwayFromCollision
+            <span class="apidocSignatureSpan">(layout, collidesWith, itemToMove, isUserAction)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.perc">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>perc
+            <span class="apidocSignatureSpan">(num)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.setTopLeft">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>setTopLeft
+            <span class="apidocSignatureSpan">(_ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.setTransform">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>setTransform
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.sortLayoutItemsByRowCol">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>sortLayoutItemsByRowCol
+            <span class="apidocSignatureSpan">(layout)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.synchronizeLayoutWithChildren">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>synchronizeLayoutWithChildren
+            <span class="apidocSignatureSpan">(initialLayout, children, cols, verticalCompact)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-grid-layout.utils.validateLayout">
+            function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>validateLayout
+            <span class="apidocSignatureSpan">(layout, contextName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout" id="apidoc.module.react-grid-layout">module react-grid-layout</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.react-grid-layout" id="apidoc.element.react-grid-layout.react-grid-layout">
+        function <span class="apidocSignatureSpan"></span>react-grid-layout
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactGridLayout(props, context) {
+  _classCallCheck(this, ReactGridLayout);
+
+  var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+
+  _initialiseProps.call(_this);
+
+  (0, _utils.autoBindHandlers)(_this, ['onDragStart', 'onDrag', 'onDragStop', 'onResizeStart', 'onResize', 'onResizeStop']);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive" id="apidoc.element.react-grid-layout.Responsive">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ResponsiveReactGridLayout() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, ResponsiveReactGridLayout);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = _this.generateInitialState(), _this.onLayoutChange = function (layout) {
+    var _extends2;
+
+    _this.props.onLayoutChange(layout, _extends({}, _this.props.layouts, (_extends2 = {}, _extends2[_this.state.breakpoint] = layout
+, _extends2)));
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.WidthProvider" id="apidoc.element.react-grid-layout.WidthProvider">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>WidthProvider
+        <span class="apidocSignatureSpan">(ComposedComponent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WidthProvider(ComposedComponent) {
+  var _class, _temp2;
+
+  return _temp2 = _class = function (_React$Component) {
+    _inherits(_class, _React$Component);
+
+    function _class() {
+      var _temp, _this, _ret;
+
+      _classCallCheck(this, _class);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.state = {
+        width: 1280
+      }, _this.mounted = false, _this.onWindowResize = function (_event) {
+        if (!_this.mounted) return;
+        var node = _reactDom2.default.findDOMNode(_this); // Flow casts this to Text | Element
+        if (node instanceof HTMLElement) _this.setState({ width: node.offsetWidth });
+      }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _class.prototype.componentDidMount = function componentDidMount() {
+      this.mounted = true;
+
+      window.addEventListener('resize', this.onWindowResize);
+      // Call to properly set the breakpoint and resize the elements.
+      // Note that if you're doing a full-width element, this can get a little wonky if a scrollbar
+      // appears because of the grid. In that case, fire your own resize event, or set `overflow: scroll` on your body.
+      this.onWindowResize();
+    };
+
+    _class.prototype.componentWillUnmount = function componentWillUnmount() {
+      this.mounted = false;
+      window.removeEventListener('resize', this.onWindowResize);
+    };
+
+    _class.prototype.render = function render() {
+      if (this.props.measureBeforeMount &amp;&amp; !this.mounted) {
+        return _react2.default.createElement('div', { className: this.props.className, style: this.props.style });
+      }
+
+      return _react2.default.createElement(ComposedComponent, _extends({}, this.props, this.state));
+    };
+
+    return _class;
+  }(_react2.default.Component), _class.defaultProps = {
+    measureBeforeMount: false
+  }, _class.propTypes = {
+    // If true, will not render children until mounted. Useful for getting the exact width before
+    // rendering, to prevent any unsightly resizing.
+    measureBeforeMount: _propTypes2.default.bool
+  }, _temp2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.autoSize" id="apidoc.element.react-grid-layout.propTypes.autoSize">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.autoSize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.autoSize = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.className" id="apidoc.element.react-grid-layout.propTypes.className">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.containerPadding" id="apidoc.element.react-grid-layout.propTypes.containerPadding">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.containerPadding
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.containerPadding = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.margin" id="apidoc.element.react-grid-layout.propTypes.margin">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.margin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.margin = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange" id="apidoc.element.react-grid-layout.propTypes.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.onLayoutChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.style" id="apidoc.element.react-grid-layout.propTypes.style">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.width" id="apidoc.element.react-grid-layout.propTypes.width">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>propTypes.width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.Responsive" id="apidoc.module.react-grid-layout.Responsive">module react-grid-layout.Responsive</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.Responsive" id="apidoc.element.react-grid-layout.Responsive.Responsive">
+        function <span class="apidocSignatureSpan">react-grid-layout.</span>Responsive
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ResponsiveReactGridLayout() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, ResponsiveReactGridLayout);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = _this.generateInitialState(), _this.onLayoutChange = function (layout) {
+    var _extends2;
+
+    _this.props.onLayoutChange(layout, _extends({}, _this.props.layouts, (_extends2 = {}, _extends2[_this.state.breakpoint] = layout
+, _extends2)));
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.Responsive.defaultProps" id="apidoc.module.react-grid-layout.Responsive.defaultProps">module react-grid-layout.Responsive.defaultProps</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onBreakpointChange" id="apidoc.element.react-grid-layout.Responsive.defaultProps.onBreakpointChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onBreakpointChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onLayoutChange" id="apidoc.element.react-grid-layout.Responsive.defaultProps.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.defaultProps.onWidthChange" id="apidoc.element.react-grid-layout.Responsive.defaultProps.onWidthChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.defaultProps.</span>onWidthChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.Responsive.propTypes" id="apidoc.module.react-grid-layout.Responsive.propTypes">module react-grid-layout.Responsive.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.breakpoint" id="apidoc.element.react-grid-layout.Responsive.propTypes.breakpoint">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>breakpoint
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">breakpoint = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.breakpoints" id="apidoc.element.react-grid-layout.Responsive.propTypes.breakpoints">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>breakpoints
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">breakpoints = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.cols" id="apidoc.element.react-grid-layout.Responsive.propTypes.cols">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>cols
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cols = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.layouts" id="apidoc.element.react-grid-layout.Responsive.propTypes.layouts">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>layouts
+        <span class="apidocSignatureSpan">(props, propName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function layouts(props, propName) {
+  if (type(props[propName]) !== '[object Object]') {
+    throw new Error('Layout property must be an object. Received: ' + type(props[propName]));
+  }
+  Object.keys(props[propName]).forEach(function (key) {
+    if (!(key in props.breakpoints)) {
+      throw new Error('Each key in layouts must align with a key in breakpoints.');
+    }
+    (0, _utils.validateLayout)(props.layouts[key], 'layouts.' + key);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.onBreakpointChange" id="apidoc.element.react-grid-layout.Responsive.propTypes.onBreakpointChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onBreakpointChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onBreakpointChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.onLayoutChange" id="apidoc.element.react-grid-layout.Responsive.propTypes.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.onWidthChange" id="apidoc.element.react-grid-layout.Responsive.propTypes.onWidthChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>onWidthChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onWidthChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.propTypes.width" id="apidoc.element.react-grid-layout.Responsive.propTypes.width">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.propTypes.</span>width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.Responsive.prototype" id="apidoc.module.react-grid-layout.Responsive.prototype">module react-grid-layout.Responsive.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.prototype.componentWillReceiveProps" id="apidoc.element.react-grid-layout.Responsive.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+
+  // Allow parent to set width or breakpoint directly.
+  if (nextProps.width != this.props.width || nextProps.breakpoint !== this.props.breakpoint || !(0, _lodash2.default)(nextProps.
+breakpoints, this.props.breakpoints) || !(0, _lodash2.default)(nextProps.cols, this.props.cols)) {
+    this.onWidthChange(nextProps);
+  }
+
+  // Allow parent to set layouts directly.
+  else if (!(0, _lodash2.default)(nextProps.layouts, this.props.layouts)) {
+      var _state = this.state,
+          _breakpoint = _state.breakpoint,
+          _cols = _state.cols;
+
+      // Since we're setting an entirely new layout object, we must generate a new responsive layout
+      // if one does not exist.
+
+      var newLayout = (0, _responsiveUtils.findOrGenerateResponsiveLayout)(nextProps.layouts, nextProps.breakpoints, _breakpoint
+, _breakpoint, _cols, nextProps.verticalCompact);
+      this.setState({ layout: newLayout });
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.prototype.generateInitialState" id="apidoc.element.react-grid-layout.Responsive.prototype.generateInitialState">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>generateInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateInitialState() {
+  var _props = this.props,
+      width = _props.width,
+      breakpoints = _props.breakpoints,
+      layouts = _props.layouts,
+      verticalCompact = _props.verticalCompact,
+      cols = _props.cols;
+
+  var breakpoint = (0, _responsiveUtils.getBreakpointFromWidth)(breakpoints, width);
+  var colNo = (0, _responsiveUtils.getColsFromBreakpoint)(breakpoint, cols);
+  // Get the initial layout. This can tricky; we try to generate one however possible if one doesn't exist
+  // for this layout.
+  var initialLayout = (0, _responsiveUtils.findOrGenerateResponsiveLayout)(layouts, breakpoints, breakpoint, breakpoint, colNo,
+verticalCompact);
+
+  return {
+    layout: initialLayout,
+    breakpoint: breakpoint,
+    cols: colNo
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.prototype.onWidthChange" id="apidoc.element.react-grid-layout.Responsive.prototype.onWidthChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>onWidthChange
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onWidthChange(nextProps) {
+  var breakpoints = nextProps.breakpoints,
+      cols = nextProps.cols,
+      layouts = nextProps.layouts,
+      verticalCompact = nextProps.verticalCompact;
+
+  var newBreakpoint = nextProps.breakpoint || (0, _responsiveUtils.getBreakpointFromWidth)(nextProps.breakpoints, nextProps.width
+);
+
+  var lastBreakpoint = this.state.breakpoint;
+
+  // Breakpoint change
+  if (lastBreakpoint !== newBreakpoint || this.props.breakpoints !== breakpoints || this.props.cols !== cols) {
+    // Preserve the current layout if the current breakpoint is not present in the next layouts.
+    if (!(lastBreakpoint in layouts)) layouts[lastBreakpoint] = (0, _utils.cloneLayout)(this.state.layout);
+
+    // Find or generate a new layout.
+    var newCols = (0, _responsiveUtils.getColsFromBreakpoint)(newBreakpoint, cols);
+    var _layout = (0, _responsiveUtils.findOrGenerateResponsiveLayout)(layouts, breakpoints, newBreakpoint, lastBreakpoint, newCols
+, verticalCompact);
+
+    // This adds missing items.
+    _layout = (0, _utils.synchronizeLayoutWithChildren)(_layout, nextProps.children, newCols, verticalCompact);
+
+    // Store the new layout.
+    layouts[newBreakpoint] = _layout;
+
+    // callbacks
+    this.props.onLayoutChange(_layout, layouts);
+    this.props.onBreakpointChange(newBreakpoint, newCols);
+    this.props.onWidthChange(nextProps.width, nextProps.margin, newCols, nextProps.containerPadding);
+
+    this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.prototype.render" id="apidoc.element.react-grid-layout.Responsive.prototype.render">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  // eslint-disable-next-line no-unused-vars
+  var _props2 = this.props,
+      breakpoint = _props2.breakpoint,
+      breakpoints = _props2.breakpoints,
+      cols = _props2.cols,
+      layouts = _props2.layouts,
+      onBreakpointChange = _props2.onBreakpointChange,
+      onLayoutChange = _props2.onLayoutChange,
+      onWidthChange = _props2.onWidthChange,
+      other = _objectWithoutProperties(_props2, ['breakpoint', 'breakpoints', 'cols', 'layouts', 'onBreakpointChange', 'onLayoutChange
+', 'onWidthChange']);
+
+  return _react2.default.createElement(_ReactGridLayout2.default, _extends({}, other, {
+    onLayoutChange: this.onLayoutChange,
+    layout: this.state.layout,
+    cols: this.state.cols
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.Responsive.utils" id="apidoc.module.react-grid-layout.Responsive.utils">module react-grid-layout.Responsive.utils</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.utils.findOrGenerateResponsiveLayout" id="apidoc.element.react-grid-layout.Responsive.utils.findOrGenerateResponsiveLayout">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>findOrGenerateResponsiveLayout
+        <span class="apidocSignatureSpan">(layouts, breakpoints, breakpoint, lastBreakpoint, cols, verticalCompact)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findOrGenerateResponsiveLayout(layouts, breakpoints, breakpoint, lastBreakpoint, cols, verticalCompact) {
+  // If it already exists, just return it.
+  if (layouts[breakpoint]) return (0, _utils.cloneLayout)(layouts[breakpoint]);
+  // Find or generate the next layout
+  var layout = layouts[lastBreakpoint];
+  var breakpointsSorted = sortBreakpoints(breakpoints);
+  var breakpointsAbove = breakpointsSorted.slice(breakpointsSorted.indexOf(breakpoint));
+  for (var i = 0, len = breakpointsAbove.length; i &lt; len; i++) {
+    var b = breakpointsAbove[i];
+    if (layouts[b]) {
+      layout = layouts[b];
+      break;
+    }
+  }
+  layout = (0, _utils.cloneLayout)(layout || []); // clone layout so we don't modify existing items
+  return (0, _utils.compact)((0, _utils.correctBounds)(layout, { cols: cols }), verticalCompact);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.utils.getBreakpointFromWidth" id="apidoc.element.react-grid-layout.Responsive.utils.getBreakpointFromWidth">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>getBreakpointFromWidth
+        <span class="apidocSignatureSpan">(breakpoints, width)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBreakpointFromWidth(breakpoints, width) {
+  var sorted = sortBreakpoints(breakpoints);
+  var matching = sorted[0];
+  for (var i = 1, len = sorted.length; i &lt; len; i++) {
+    var breakpointName = sorted[i];
+    if (width &gt; breakpoints[breakpointName]) matching = breakpointName;
+  }
+  return matching;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.utils.getColsFromBreakpoint" id="apidoc.element.react-grid-layout.Responsive.utils.getColsFromBreakpoint">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>getColsFromBreakpoint
+        <span class="apidocSignatureSpan">(breakpoint, cols)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getColsFromBreakpoint(breakpoint, cols) {
+  if (!cols[breakpoint]) {
+    throw new Error("ResponsiveReactGridLayout: `cols` entry for breakpoint " + breakpoint + " is missing!");
+  }
+  return cols[breakpoint];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.Responsive.utils.sortBreakpoints" id="apidoc.element.react-grid-layout.Responsive.utils.sortBreakpoints">
+        function <span class="apidocSignatureSpan">react-grid-layout.Responsive.utils.</span>sortBreakpoints
+        <span class="apidocSignatureSpan">(breakpoints)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sortBreakpoints(breakpoints) {
+  var keys = Object.keys(breakpoints);
+  return keys.sort(function (a, b) {
+    return breakpoints[a] - breakpoints[b];
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.defaultProps" id="apidoc.module.react-grid-layout.defaultProps">module react-grid-layout.defaultProps</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onDrag" id="apidoc.element.react-grid-layout.defaultProps.onDrag">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDrag
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onDragStart" id="apidoc.element.react-grid-layout.defaultProps.onDragStart">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDragStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onDragStop" id="apidoc.element.react-grid-layout.defaultProps.onDragStop">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onDragStop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onLayoutChange" id="apidoc.element.react-grid-layout.defaultProps.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onResize" id="apidoc.element.react-grid-layout.defaultProps.onResize">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onResizeStart" id="apidoc.element.react-grid-layout.defaultProps.onResizeStart">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResizeStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.defaultProps.onResizeStop" id="apidoc.element.react-grid-layout.defaultProps.onResizeStop">
+        function <span class="apidocSignatureSpan">react-grid-layout.defaultProps.</span>onResizeStop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes" id="apidoc.module.react-grid-layout.propTypes">module react-grid-layout.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.autoSize" id="apidoc.element.react-grid-layout.propTypes.autoSize">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>autoSize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">autoSize = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.children" id="apidoc.element.react-grid-layout.propTypes.children">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>children
+        <span class="apidocSignatureSpan">(props, propName, _componentName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function children(props, propName, _componentName) {
+  var children = props[propName];
+
+  // Check children keys for duplicates. Throw if found.
+  var keys = {};
+  _react2.default.Children.forEach(children, function (child) {
+    if (keys[child.key]) {
+      throw new Error("Duplicate child key found! This will cause problems in ReactGridLayout.");
+    }
+    keys[child.key] = true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.className" id="apidoc.element.react-grid-layout.propTypes.className">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.cols" id="apidoc.element.react-grid-layout.propTypes.cols">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>cols
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cols = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.containerPadding" id="apidoc.element.react-grid-layout.propTypes.containerPadding">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>containerPadding
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">containerPadding = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.draggableCancel" id="apidoc.element.react-grid-layout.propTypes.draggableCancel">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>draggableCancel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">draggableCancel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.draggableHandle" id="apidoc.element.react-grid-layout.propTypes.draggableHandle">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>draggableHandle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">draggableHandle = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.isDraggable" id="apidoc.element.react-grid-layout.propTypes.isDraggable">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>isDraggable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDraggable = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.isResizable" id="apidoc.element.react-grid-layout.propTypes.isResizable">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>isResizable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isResizable = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.layout" id="apidoc.element.react-grid-layout.propTypes.layout">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>layout
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function layout(props) {
+  var layout = props.layout;
+  // I hope you're setting the data-grid property on the grid items
+  if (layout === undefined) return;
+  (0, _utils.validateLayout)(layout, 'layout');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.margin" id="apidoc.element.react-grid-layout.propTypes.margin">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>margin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">margin = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.maxRows" id="apidoc.element.react-grid-layout.propTypes.maxRows">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>maxRows
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">maxRows = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onDrag" id="apidoc.element.react-grid-layout.propTypes.onDrag">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDrag
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDrag = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onDragStart" id="apidoc.element.react-grid-layout.propTypes.onDragStart">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDragStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDragStart = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onDragStop" id="apidoc.element.react-grid-layout.propTypes.onDragStop">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onDragStop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDragStop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange" id="apidoc.element.react-grid-layout.propTypes.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onResize" id="apidoc.element.react-grid-layout.propTypes.onResize">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onResize = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onResizeStart" id="apidoc.element.react-grid-layout.propTypes.onResizeStart">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResizeStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onResizeStart = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onResizeStop" id="apidoc.element.react-grid-layout.propTypes.onResizeStop">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onResizeStop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onResizeStop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.rowHeight" id="apidoc.element.react-grid-layout.propTypes.rowHeight">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>rowHeight
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rowHeight = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.style" id="apidoc.element.react-grid-layout.propTypes.style">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.useCSSTransforms" id="apidoc.element.react-grid-layout.propTypes.useCSSTransforms">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>useCSSTransforms
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">useCSSTransforms = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.verticalCompact" id="apidoc.element.react-grid-layout.propTypes.verticalCompact">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>verticalCompact
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verticalCompact = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.width" id="apidoc.element.react-grid-layout.propTypes.width">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.autoSize" id="apidoc.module.react-grid-layout.propTypes.autoSize">module react-grid-layout.propTypes.autoSize</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.autoSize.autoSize" id="apidoc.element.react-grid-layout.propTypes.autoSize.autoSize">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>autoSize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">autoSize = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.autoSize.isRequired" id="apidoc.element.react-grid-layout.propTypes.autoSize.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.autoSize.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.className" id="apidoc.module.react-grid-layout.propTypes.className">module react-grid-layout.propTypes.className</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.className.className" id="apidoc.element.react-grid-layout.propTypes.className.className">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.className.isRequired" id="apidoc.element.react-grid-layout.propTypes.className.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.className.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.containerPadding" id="apidoc.module.react-grid-layout.propTypes.containerPadding">module react-grid-layout.propTypes.containerPadding</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.containerPadding.containerPadding" id="apidoc.element.react-grid-layout.propTypes.containerPadding.containerPadding">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>containerPadding
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">containerPadding = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.containerPadding.isRequired" id="apidoc.element.react-grid-layout.propTypes.containerPadding.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.containerPadding.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.margin" id="apidoc.module.react-grid-layout.propTypes.margin">module react-grid-layout.propTypes.margin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.margin.margin" id="apidoc.element.react-grid-layout.propTypes.margin.margin">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>margin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">margin = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.margin.isRequired" id="apidoc.element.react-grid-layout.propTypes.margin.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.margin.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.onLayoutChange" id="apidoc.module.react-grid-layout.propTypes.onLayoutChange">module react-grid-layout.propTypes.onLayoutChange</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange.onLayoutChange" id="apidoc.element.react-grid-layout.propTypes.onLayoutChange.onLayoutChange">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>onLayoutChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.onLayoutChange.isRequired" id="apidoc.element.react-grid-layout.propTypes.onLayoutChange.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.onLayoutChange.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.style" id="apidoc.module.react-grid-layout.propTypes.style">module react-grid-layout.propTypes.style</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.style.style" id="apidoc.element.react-grid-layout.propTypes.style.style">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.style.isRequired" id="apidoc.element.react-grid-layout.propTypes.style.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.style.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.propTypes.width" id="apidoc.module.react-grid-layout.propTypes.width">module react-grid-layout.propTypes.width</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.width.width" id="apidoc.element.react-grid-layout.propTypes.width.width">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.</span>width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.propTypes.width.isRequired" id="apidoc.element.react-grid-layout.propTypes.width.isRequired">
+        function <span class="apidocSignatureSpan">react-grid-layout.propTypes.width.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-grid-layout.utils" id="apidoc.module.react-grid-layout.utils">module react-grid-layout.utils</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.autoBindHandlers" id="apidoc.element.react-grid-layout.utils.autoBindHandlers">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>autoBindHandlers
+        <span class="apidocSignatureSpan">(el, fns)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function autoBindHandlers(el, fns) {
+  fns.forEach(function (key) {
+    return el[key] = el[key].bind(el);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.bottom" id="apidoc.element.react-grid-layout.utils.bottom">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>bottom
+        <span class="apidocSignatureSpan">(layout)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bottom(layout) {
+  var max = 0,
+      bottomY = void 0;
+  for (var _i = 0, len = layout.length; _i &lt; len; _i++) {
+    bottomY = layout[_i].y + layout[_i].h;
+    if (bottomY &gt; max) max = bottomY;
+  }
+  return max;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.childrenEqual" id="apidoc.element.react-grid-layout.utils.childrenEqual">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>childrenEqual
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function childrenEqual(a, b) {
+  return (0, _lodash2.default)(_react2.default.Children.map(a, function (c) {
+    return c.key;
+  }), _react2.default.Children.map(b, function (c) {
+    return c.key;
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.cloneLayout" id="apidoc.element.react-grid-layout.utils.cloneLayout">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>cloneLayout
+        <span class="apidocSignatureSpan">(layout)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cloneLayout(layout) {
+  var newLayout = Array(layout.length);
+  for (var _i2 = 0, len = layout.length; _i2 &lt; len; _i2++) {
+    newLayout[_i2] = cloneLayoutItem(layout[_i2]);
+  }
+  return newLayout;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.cloneLayoutItem" id="apidoc.element.react-grid-layout.utils.cloneLayoutItem">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>cloneLayoutItem
+        <span class="apidocSignatureSpan">(layoutItem)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cloneLayoutItem(layoutItem) {
+  return {
+    w: layoutItem.w, h: layoutItem.h, x: layoutItem.x, y: layoutItem.y, i: layoutItem.i,
+    minW: layoutItem.minW, maxW: layoutItem.maxW, minH: layoutItem.minH, maxH: layoutItem.maxH,
+    moved: Boolean(layoutItem.moved), static: Boolean(layoutItem.static),
+    // These can be null
+    isDraggable: layoutItem.isDraggable, isResizable: layoutItem.isResizable
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.collides" id="apidoc.element.react-grid-layout.utils.collides">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>collides
+        <span class="apidocSignatureSpan">(l1, l2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function collides(l1, l2) {
+  if (l1 === l2) return false; // same element
+  if (l1.x + l1.w &lt;= l2.x) return false; // l1 is left of l2
+  if (l1.x &gt;= l2.x + l2.w) return false; // l1 is right of l2
+  if (l1.y + l1.h &lt;= l2.y) return false; // l1 is above l2
+  if (l1.y &gt;= l2.y + l2.h) return false; // l1 is below l2
+  return true; // boxes overlap
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.compact" id="apidoc.element.react-grid-layout.utils.compact">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>compact
+        <span class="apidocSignatureSpan">(layout, verticalCompact)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compact(layout, verticalCompact) {
+  // Statics go in the compareWith array right away so items flow around them.
+  var compareWith = getStatics(layout);
+  // We go through the items by row and column.
+  var sorted = sortLayoutItemsByRowCol(layout);
+  // Holding for new items.
+  var out = Array(layout.length);
+
+  for (var _i3 = 0, len = sorted.length; _i3 &lt; len; _i3++) {
+    var l = cloneLayoutItem(sorted[_i3]);
+
+    // Don't move static elements
+    if (!l.static) {
+      l = compactItem(compareWith, l, verticalCompact);
+
+      // Add to comparison array. We only collide with items before this one.
+      // Statics are already in this array.
+      compareWith.push(l);
+    }
+
+    // Add to output array to make sure they still come out in the right order.
+    out[layout.indexOf(sorted[_i3])] = l;
+
+    // Clear moved flag, if it exists.
+    l.moved = false;
+  }
+
+  return out;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.compactItem" id="apidoc.element.react-grid-layout.utils.compactItem">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>compactItem
+        <span class="apidocSignatureSpan">(compareWith, l, verticalCompact)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compactItem(compareWith, l, verticalCompact) {
+  if (verticalCompact) {
+    // Bottom 'y' possible is the bottom of the layout.
+    // This allows you to do nice stuff like specify {y: Infinity}
+    // This is here because the layout must be sorted in order to get the correct bottom `y`.
+    l.y = Math.min(bottom(compareWith), l.y);
+
+    // Move the element up as far as it can go without colliding.
+    while (l.y &gt; 0 &amp;&amp; !getFirstCollision(compareWith, l)) {
+      l.y--;
+    }
+  }
+
+  // Move it down, and keep moving it down if it's colliding.
+  var collides = void 0;
+  while (collides = getFirstCollision(compareWith, l)) {
+    l.y = collides.y + collides.h;
+  }
+  return l;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.correctBounds" id="apidoc.element.react-grid-layout.utils.correctBounds">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>correctBounds
+        <span class="apidocSignatureSpan">(layout, bounds)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function correctBounds(layout, bounds) {
+  var collidesWith = getStatics(layout);
+  for (var _i4 = 0, len = layout.length; _i4 &lt; len; _i4++) {
+    var l = layout[_i4];
+    // Overflows right
+    if (l.x + l.w &gt; bounds.cols) l.x = bounds.cols - l.w;
+    // Overflows left
+    if (l.x &lt; 0) {
+      l.x = 0;
+      l.w = bounds.cols;
+    }
+    if (!l.static) collidesWith.push(l);else {
+      // If this is static and collides with other statics, we must move it down.
+      // We have to do something nicer than just letting them overlap.
+      while (getFirstCollision(collidesWith, l)) {
+        l.y++;
+      }
+    }
+  }
+  return layout;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.getAllCollisions" id="apidoc.element.react-grid-layout.utils.getAllCollisions">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getAllCollisions
+        <span class="apidocSignatureSpan">(layout, layoutItem)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getAllCollisions(layout, layoutItem) {
+  return layout.filter(function (l) {
+    return collides(l, layoutItem);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.getFirstCollision" id="apidoc.element.react-grid-layout.utils.getFirstCollision">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getFirstCollision
+        <span class="apidocSignatureSpan">(layout, layoutItem)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getFirstCollision(layout, layoutItem) {
+  for (var _i6 = 0, len = layout.length; _i6 &lt; len; _i6++) {
+    if (collides(layout[_i6], layoutItem)) return layout[_i6];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.getLayoutItem" id="apidoc.element.react-grid-layout.utils.getLayoutItem">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getLayoutItem
+        <span class="apidocSignatureSpan">(layout, id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getLayoutItem(layout, id) {
+  for (var _i5 = 0, len = layout.length; _i5 &lt; len; _i5++) {
+    if (layout[_i5].i === id) return layout[_i5];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.getStatics" id="apidoc.element.react-grid-layout.utils.getStatics">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>getStatics
+        <span class="apidocSignatureSpan">(layout)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getStatics(layout) {
+  return layout.filter(function (l) {
+    return l.static;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.moveElement" id="apidoc.element.react-grid-layout.utils.moveElement">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>moveElement
+        <span class="apidocSignatureSpan">(layout, l, x, y, isUserAction)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function moveElement(layout, l, x, y, isUserAction) {
+  if (l.static) return layout;
+
+  // Short-circuit if nothing to do.
+  if (l.y === y &amp;&amp; l.x === x) return layout;
+
+  var movingUp = y &amp;&amp; l.y &gt; y;
+  // This is quite a bit faster than extending the object
+  if (typeof x === 'number') l.x = x;
+  if (typeof y === 'number') l.y = y;
+  l.moved = true;
+
+  // If this collides with anything, move it.
+  // When doing this comparison, we have to sort the items we compare with
+  // to ensure, in the case of multiple collisions, that we're getting the
+  // nearest collision.
+  var sorted = sortLayoutItemsByRowCol(layout);
+  if (movingUp) sorted = sorted.reverse();
+  var collisions = getAllCollisions(sorted, l);
+
+  // Move each item that collides away from this element.
+  for (var _i7 = 0, len = collisions.length; _i7 &lt; len; _i7++) {
+    var collision = collisions[_i7];
+    // console.log('resolving collision between', l.i, 'at', l.y, 'and', collision.i, 'at', collision.y);
+
+    // Short circuit so we can't infinite loop
+    if (collision.moved) continue;
+
+    // This makes it feel a bit more precise by waiting to swap for just a bit when moving up.
+    if (l.y &gt; collision.y &amp;&amp; l.y - collision.y &gt; collision.h / 4) continue;
+
+    // Don't move static items - we have to move *this* element away
+    if (collision.static) {
+      layout = moveElementAwayFromCollision(layout, collision, l, isUserAction);
+    } else {
+      layout = moveElementAwayFromCollision(layout, l, collision, isUserAction);
+    }
+  }
+
+  return layout;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.moveElementAwayFromCollision" id="apidoc.element.react-grid-layout.utils.moveElementAwayFromCollision">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>moveElementAwayFromCollision
+        <span class="apidocSignatureSpan">(layout, collidesWith, itemToMove, isUserAction)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function moveElementAwayFromCollision(layout, collidesWith, itemToMove, isUserAction) {
+
+  // If there is enough space above the collision to put this element, move it there.
+  // We only do this on the main collision as this can get funky in cascades and cause
+  // unwanted swapping behavior.
+  if (isUserAction) {
+    // Make a mock item so we don't modify the item here, only modify in moveElement.
+    var fakeItem = {
+      x: itemToMove.x,
+      y: itemToMove.y,
+      w: itemToMove.w,
+      h: itemToMove.h,
+      i: '-1'
+    };
+    fakeItem.y = Math.max(collidesWith.y - itemToMove.h, 0);
+    if (!getFirstCollision(layout, fakeItem)) {
+      return moveElement(layout, itemToMove, undefined, fakeItem.y);
+    }
+  }
+
+  // Previously this was optimized to move below the collision directly, but this can cause problems
+  // with cascading moves, as an item may actually leapfrog a collision and cause a reversal in order.
+  return moveElement(layout, itemToMove, undefined, itemToMove.y + 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.perc" id="apidoc.element.react-grid-layout.utils.perc">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>perc
+        <span class="apidocSignatureSpan">(num)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function perc(num) {
+  return num * 100 + '%';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.setTopLeft" id="apidoc.element.react-grid-layout.utils.setTopLeft">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>setTopLeft
+        <span class="apidocSignatureSpan">(_ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setTopLeft(_ref2) {
+  var top = _ref2.top,
+      left = _ref2.left,
+      width = _ref2.width,
+      height = _ref2.height;
+
+  return {
+    top: top + 'px',
+    left: left + 'px',
+    width: width + 'px',
+    height: height + 'px',
+    position: 'absolute'
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.setTransform" id="apidoc.element.react-grid-layout.utils.setTransform">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>setTransform
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setTransform(_ref) {
+  var top = _ref.top,
+      left = _ref.left,
+      width = _ref.width,
+      height = _ref.height;
+
+  // Replace unitless items with px
+  var translate = 'translate(' + left + 'px,' + top + 'px)';
+  return {
+    transform: translate,
+    WebkitTransform: translate,
+    MozTransform: translate,
+    msTransform: translate,
+    OTransform: translate,
+    width: width + 'px',
+    height: height + 'px',
+    position: 'absolute'
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.sortLayoutItemsByRowCol" id="apidoc.element.react-grid-layout.utils.sortLayoutItemsByRowCol">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>sortLayoutItemsByRowCol
+        <span class="apidocSignatureSpan">(layout)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sortLayoutItemsByRowCol(layout) {
+  return [].concat(layout).sort(function (a, b) {
+    if (a.y &gt; b.y || a.y === b.y &amp;&amp; a.x &gt; b.x) {
+      return 1;
+    } else if (a.y === b.y &amp;&amp; a.x === b.x) {
+      // Without this, we can get different sort results in IE vs. Chrome/FF
+      return 0;
+    }
+    return -1;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.synchronizeLayoutWithChildren" id="apidoc.element.react-grid-layout.utils.synchronizeLayoutWithChildren">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>synchronizeLayoutWithChildren
+        <span class="apidocSignatureSpan">(initialLayout, children, cols, verticalCompact)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function synchronizeLayoutWithChildren(initialLayout, children, cols, verticalCompact) {
+  initialLayout = initialLayout || [];
+
+  // Generate one layout item per child.
+  var layout = [];
+  _react2.default.Children.forEach(children, function (child, i) {
+    // Don't overwrite if it already exists.
+    var exists = getLayoutItem(initialLayout, child.key || "1" /* FIXME satisfies Flow */);
+    if (exists) {
+      layout[i] = cloneLayoutItem(exists);
+    } else {
+      if (!isProduction &amp;&amp; child.props._grid) {
+        console.warn('`_grid` properties on children have been deprecated as of React 15.2. ' + // eslint-disable-line
+        'Please use `data-grid` or add your properties directly to the `layout`.');
+      }
+      var g = child.props['data-grid'] || child.props._grid;
+
+      // Hey, this item has a data-grid property, use it.
+      if (g) {
+        if (!isProduction) {
+          validateLayout([g], 'ReactGridLayout.children');
+        }
+
+        layout[i] = cloneLayoutItem(_extends({}, g, { i: child.key }));
+      } else {
+        // Nothing provided: ensure this is added to the bottom
+        layout[i] = cloneLayoutItem({ w: 1, h: 1, x: 0, y: bottom(layout), i: child.key || "1" });
+      }
+    }
+  });
+
+  // Correct the layout.
+  layout = correctBounds(layout, { cols: cols });
+  layout = compact(layout, verticalCompact);
+
+  return layout;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-grid-layout.utils.validateLayout" id="apidoc.element.react-grid-layout.utils.validateLayout">
+        function <span class="apidocSignatureSpan">react-grid-layout.utils.</span>validateLayout
+        <span class="apidocSignatureSpan">(layout, contextName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateLayout(layout, contextName) {
+  contextName = contextName || "Layout";
+  var subProps = ['x', 'y', 'w', 'h'];
+  if (!Array.isArray(layout)) throw new Error(contextName + " must be an array!");
+  for (var _i8 = 0, len = layout.length; _i8 &lt; len; _i8++) {
+    var item = layout[_i8];
+    for (var j = 0; j &lt; subProps.length; j++) {
+      if (typeof item[subProps[j]] !== 'number') {
+        throw new Error('ReactGridLayout: ' + contextName + '[' + _i8 + '].' + subProps[j] + ' must be a number!');
+      }
+    }
+    if (item.i &amp;&amp; typeof item.i !== 'string') {
+      throw new Error('ReactGridLayout: ' + contextName + '[' + _i8 + '].i must be a string!');
+    }
+    if (item.static !== undefined &amp;&amp; typeof item.static !== 'boolean') {
+      throw new Error('ReactGridLayout: ' + contextName + '[' + _i8 + '].static must be a boolean!');
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
