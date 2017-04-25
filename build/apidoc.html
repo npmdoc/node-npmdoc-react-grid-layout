@@ -1435,7 +1435,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _layout = (0, _utils.synchronizeLayoutWithChildren)(_layout, nextProps.children, newCols, verticalCompact);
+
+    // Store the new layout.
+    layouts[newBreakpoint] = _layout;
+
+    // callbacks
+    this.props.onLayoutChange(_layout, layouts);
+    this.props.<span class="apidocCodeKeywordSpan">onBreakpointChange</span>(newBreakpoint, newCols);
+    this.props.onWidthChange(nextProps.width, nextProps.margin, newCols, nextProps.containerPadding);
+
+    this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols });
+  }
+};
+
+ResponsiveReactGridLayout.prototype.render = function render() {
+...</pre></li>
     </ul>
 
 
@@ -1448,7 +1464,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this.onLayoutMaybeChanged(newLayout, oldLayout);
+};
+
+ReactGridLayout.prototype.onLayoutMaybeChanged = function onLayoutMaybeChanged(newLayout, oldLayout) {
+  if (!oldLayout) oldLayout = this.state.layout;
+  if (!(0, _lodash2.default)(oldLayout, newLayout)) {
+    this.props.<span class="apidocCodeKeywordSpan">onLayoutChange</span>(newLayout);
+  }
+};
+
+ReactGridLayout.prototype.onResizeStart = function onResizeStart(i, w, h, _ref4) {
+  var e = _ref4.e,
+      node = _ref4.node;
+  var layout = this.state.layout;
+...</pre></li>
     </ul>
 
 
@@ -1461,7 +1493,24 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+  };
+
+  ResponsiveReactGridLayout.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+
+// Allow parent to set width or breakpoint directly.
+if (nextProps.width != this.props.width || nextProps.breakpoint !== this.props.breakpoint || !(0, _lodash2.default)(nextProps.breakpoints
+, this.props.breakpoints) || !(0, _lodash2.default)(nextProps.cols, this.props.cols)) {
+  this.<span class="apidocCodeKeywordSpan">onWidthChange</span>(nextProps);
+}
+
+// Allow parent to set layouts directly.
+else if (!(0, _lodash2.default)(nextProps.layouts, this.props.layouts)) {
+    var _state = this.state,
+        _breakpoint = _state.breakpoint,
+        _cols = _state.cols;
+...</pre></li>
     </ul>
 
 
@@ -1547,7 +1596,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onBreakpointChange = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _layout = (0, _utils.synchronizeLayoutWithChildren)(_layout, nextProps.children, newCols, verticalCompact);
+
+    // Store the new layout.
+    layouts[newBreakpoint] = _layout;
+
+    // callbacks
+    this.props.onLayoutChange(_layout, layouts);
+    this.props.<span class="apidocCodeKeywordSpan">onBreakpointChange</span>(newBreakpoint, newCols);
+    this.props.onWidthChange(nextProps.width, nextProps.margin, newCols, nextProps.containerPadding);
+
+    this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols });
+  }
+};
+
+ResponsiveReactGridLayout.prototype.render = function render() {
+...</pre></li>
     </ul>
 
 
@@ -1560,7 +1625,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this.onLayoutMaybeChanged(newLayout, oldLayout);
+};
+
+ReactGridLayout.prototype.onLayoutMaybeChanged = function onLayoutMaybeChanged(newLayout, oldLayout) {
+  if (!oldLayout) oldLayout = this.state.layout;
+  if (!(0, _lodash2.default)(oldLayout, newLayout)) {
+    this.props.<span class="apidocCodeKeywordSpan">onLayoutChange</span>(newLayout);
+  }
+};
+
+ReactGridLayout.prototype.onResizeStart = function onResizeStart(i, w, h, _ref4) {
+  var e = _ref4.e,
+      node = _ref4.node;
+  var layout = this.state.layout;
+...</pre></li>
     </ul>
 
 
@@ -1573,7 +1654,24 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onWidthChange = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+  };
+
+  ResponsiveReactGridLayout.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+
+// Allow parent to set width or breakpoint directly.
+if (nextProps.width != this.props.width || nextProps.breakpoint !== this.props.breakpoint || !(0, _lodash2.default)(nextProps.breakpoints
+, this.props.breakpoints) || !(0, _lodash2.default)(nextProps.cols, this.props.cols)) {
+  this.<span class="apidocCodeKeywordSpan">onWidthChange</span>(nextProps);
+}
+
+// Allow parent to set layouts directly.
+else if (!(0, _lodash2.default)(nextProps.layouts, this.props.layouts)) {
+    var _state = this.state,
+        _breakpoint = _state.breakpoint,
+        _cols = _state.cols;
+...</pre></li>
     </ul>
 
 
@@ -1658,7 +1756,26 @@ verticalCompact);
     cols: colNo
   };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  _classCallCheck(this, ResponsiveReactGridLayout);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = _this.<span class="apidocCodeKeywordSpan">generateInitialState</span>(), _this.onLayoutChange = function
+ (layout) {
+    var _extends2;
+
+    _this.props.onLayoutChange(layout, _extends({}, _this.props.layouts, (_extends2 = {}, _extends2[_this.state.breakpoint] = layout
+, _extends2)));
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+
+// This should only include propTypes needed in this code; RGL itself
+...</pre></li>
     </ul>
 
 
@@ -1705,7 +1822,24 @@ verticalCompact);
     this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+  };
+
+  ResponsiveReactGridLayout.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+
+// Allow parent to set width or breakpoint directly.
+if (nextProps.width != this.props.width || nextProps.breakpoint !== this.props.breakpoint || !(0, _lodash2.default)(nextProps.breakpoints
+, this.props.breakpoints) || !(0, _lodash2.default)(nextProps.cols, this.props.cols)) {
+  this.<span class="apidocCodeKeywordSpan">onWidthChange</span>(nextProps);
+}
+
+// Allow parent to set layouts directly.
+else if (!(0, _lodash2.default)(nextProps.layouts, this.props.layouts)) {
+    var _state = this.state,
+        _breakpoint = _state.breakpoint,
+        _cols = _state.cols;
+...</pre></li>
     </ul>
 
 
@@ -1857,7 +1991,22 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var placeholder = {
+    w: l.w, h: l.h, x: l.x, y: l.y, placeholder: true, i: i
+  };
+
+  // Move the element to the dragged location.
+  layout = (0, _utils.moveElement)(layout, l, x, y, true /* isUserAction */);
+
+  this.props.<span class="apidocCodeKeywordSpan">onDrag</span>(layout, oldDragItem, l, placeholder, e, node);
+
+  this.setState({
+    layout: (0, _utils.compact)(layout, this.props.verticalCompact),
+    activeDrag: placeholder
+  });
+};
+...</pre></li>
     </ul>
 
 
@@ -1870,7 +2019,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var layout = this.state.layout;
+
+  var l = (0, _utils.getLayoutItem)(layout, i);
+  if (!l) return;
+
+  this.setState({ oldDragItem: (0, _utils.cloneLayoutItem)(l), oldLayout: this.state.layout });
+
+  this.props.<span class="apidocCodeKeywordSpan">onDragStart</span>(layout, l, l, null, e, node);
+};
+
+/**
+ * Each drag movement create a new dragelement and move the element to the dragged location
+ * @param {String} i Id of the child
+ * @param {Number} x X position of the move
+ * @param {Number} y Y position of the move
+...</pre></li>
     </ul>
 
 
@@ -1883,7 +2048,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var l = (0, _utils.getLayoutItem)(layout, i);
+if (!l) return;
+
+// Move the element here
+layout = (0, _utils.moveElement)(layout, l, x, y, true /* isUserAction */);
+
+this.props.<span class="apidocCodeKeywordSpan">onDragStop</span>(layout, oldDragItem, l, null, e, node);
+
+// Set state
+var newLayout = (0, _utils.compact)(layout, this.props.verticalCompact);
+var oldLayout = this.state.oldLayout;
+
+this.setState({
+  activeDrag: null,
+...</pre></li>
     </ul>
 
 
@@ -1896,7 +2077,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this.onLayoutMaybeChanged(newLayout, oldLayout);
+};
+
+ReactGridLayout.prototype.onLayoutMaybeChanged = function onLayoutMaybeChanged(newLayout, oldLayout) {
+  if (!oldLayout) oldLayout = this.state.layout;
+  if (!(0, _lodash2.default)(oldLayout, newLayout)) {
+    this.props.<span class="apidocCodeKeywordSpan">onLayoutChange</span>(newLayout);
+  }
+};
+
+ReactGridLayout.prototype.onResizeStart = function onResizeStart(i, w, h, _ref4) {
+  var e = _ref4.e,
+      node = _ref4.node;
+  var layout = this.state.layout;
+...</pre></li>
     </ul>
 
 
@@ -1909,7 +2106,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  l.h = h;
+
+  // Create placeholder element (display only)
+  var placeholder = {
+    w: w, h: h, x: l.x, y: l.y, static: true, i: i
+  };
+
+  this.props.<span class="apidocCodeKeywordSpan">onResize</span>(layout, oldResizeItem, l, placeholder, e, node);
+
+  // Re-compact the layout and set the drag placeholder.
+  this.setState({
+    layout: (0, _utils.compact)(layout, this.props.verticalCompact),
+    activeDrag: placeholder
+  });
+};
+...</pre></li>
     </ul>
 
 
@@ -1922,7 +2135,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!l) return;
+
+  this.setState({
+    oldResizeItem: (0, _utils.cloneLayoutItem)(l),
+    oldLayout: this.state.layout
+  });
+
+  this.props.<span class="apidocCodeKeywordSpan">onResizeStart</span>(layout, l, l, null, e, node);
+};
+
+ReactGridLayout.prototype.onResize = function onResize(i, w, h, _ref5) {
+  var e = _ref5.e,
+      node = _ref5.node;
+  var _state = this.state,
+      layout = _state.layout,
+...</pre></li>
     </ul>
 
 
@@ -1935,7 +2164,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function noop() {}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    node = _ref6.node;
+var _state2 = this.state,
+    layout = _state2.layout,
+    oldResizeItem = _state2.oldResizeItem;
+
+var l = (0, _utils.getLayoutItem)(layout, i);
+
+this.props.<span class="apidocCodeKeywordSpan">onResizeStop</span>(layout, oldResizeItem, l, null, e, node);
+
+// Set state
+var newLayout = (0, _utils.compact)(layout, this.props.verticalCompact);
+var oldLayout = this.state.oldLayout;
+
+this.setState({
+  activeDrag: null,
+...</pre></li>
     </ul>
 
 
@@ -2137,7 +2382,22 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onDrag = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var placeholder = {
+    w: l.w, h: l.h, x: l.x, y: l.y, placeholder: true, i: i
+  };
+
+  // Move the element to the dragged location.
+  layout = (0, _utils.moveElement)(layout, l, x, y, true /* isUserAction */);
+
+  this.props.<span class="apidocCodeKeywordSpan">onDrag</span>(layout, oldDragItem, l, placeholder, e, node);
+
+  this.setState({
+    layout: (0, _utils.compact)(layout, this.props.verticalCompact),
+    activeDrag: placeholder
+  });
+};
+...</pre></li>
     </ul>
 
 
@@ -2150,7 +2410,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onDragStart = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var layout = this.state.layout;
+
+  var l = (0, _utils.getLayoutItem)(layout, i);
+  if (!l) return;
+
+  this.setState({ oldDragItem: (0, _utils.cloneLayoutItem)(l), oldLayout: this.state.layout });
+
+  this.props.<span class="apidocCodeKeywordSpan">onDragStart</span>(layout, l, l, null, e, node);
+};
+
+/**
+ * Each drag movement create a new dragelement and move the element to the dragged location
+ * @param {String} i Id of the child
+ * @param {Number} x X position of the move
+ * @param {Number} y Y position of the move
+...</pre></li>
     </ul>
 
 
@@ -2163,7 +2439,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onDragStop = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var l = (0, _utils.getLayoutItem)(layout, i);
+if (!l) return;
+
+// Move the element here
+layout = (0, _utils.moveElement)(layout, l, x, y, true /* isUserAction */);
+
+this.props.<span class="apidocCodeKeywordSpan">onDragStop</span>(layout, oldDragItem, l, null, e, node);
+
+// Set state
+var newLayout = (0, _utils.compact)(layout, this.props.verticalCompact);
+var oldLayout = this.state.oldLayout;
+
+this.setState({
+  activeDrag: null,
+...</pre></li>
     </ul>
 
 
@@ -2176,7 +2468,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this.onLayoutMaybeChanged(newLayout, oldLayout);
+};
+
+ReactGridLayout.prototype.onLayoutMaybeChanged = function onLayoutMaybeChanged(newLayout, oldLayout) {
+  if (!oldLayout) oldLayout = this.state.layout;
+  if (!(0, _lodash2.default)(oldLayout, newLayout)) {
+    this.props.<span class="apidocCodeKeywordSpan">onLayoutChange</span>(newLayout);
+  }
+};
+
+ReactGridLayout.prototype.onResizeStart = function onResizeStart(i, w, h, _ref4) {
+  var e = _ref4.e,
+      node = _ref4.node;
+  var layout = this.state.layout;
+...</pre></li>
     </ul>
 
 
@@ -2189,7 +2497,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onResize = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  l.h = h;
+
+  // Create placeholder element (display only)
+  var placeholder = {
+    w: w, h: h, x: l.x, y: l.y, static: true, i: i
+  };
+
+  this.props.<span class="apidocCodeKeywordSpan">onResize</span>(layout, oldResizeItem, l, placeholder, e, node);
+
+  // Re-compact the layout and set the drag placeholder.
+  this.setState({
+    layout: (0, _utils.compact)(layout, this.props.verticalCompact),
+    activeDrag: placeholder
+  });
+};
+...</pre></li>
     </ul>
 
 
@@ -2202,7 +2526,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onResizeStart = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!l) return;
+
+  this.setState({
+    oldResizeItem: (0, _utils.cloneLayoutItem)(l),
+    oldLayout: this.state.layout
+  });
+
+  this.props.<span class="apidocCodeKeywordSpan">onResizeStart</span>(layout, l, l, null, e, node);
+};
+
+ReactGridLayout.prototype.onResize = function onResize(i, w, h, _ref5) {
+  var e = _ref5.e,
+      node = _ref5.node;
+  var _state = this.state,
+      layout = _state.layout,
+...</pre></li>
     </ul>
 
 
@@ -2215,7 +2555,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onResizeStop = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    node = _ref6.node;
+var _state2 = this.state,
+    layout = _state2.layout,
+    oldResizeItem = _state2.oldResizeItem;
+
+var l = (0, _utils.getLayoutItem)(layout, i);
+
+this.props.<span class="apidocCodeKeywordSpan">onResizeStop</span>(layout, oldResizeItem, l, null, e, node);
+
+// Set state
+var newLayout = (0, _utils.compact)(layout, this.props.verticalCompact);
+var oldLayout = this.state.oldLayout;
+
+this.setState({
+  activeDrag: null,
+...</pre></li>
     </ul>
 
 
@@ -2422,7 +2778,23 @@ verticalCompact);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">onLayoutChange = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this.onLayoutMaybeChanged(newLayout, oldLayout);
+};
+
+ReactGridLayout.prototype.onLayoutMaybeChanged = function onLayoutMaybeChanged(newLayout, oldLayout) {
+  if (!oldLayout) oldLayout = this.state.layout;
+  if (!(0, _lodash2.default)(oldLayout, newLayout)) {
+    this.props.<span class="apidocCodeKeywordSpan">onLayoutChange</span>(newLayout);
+  }
+};
+
+ReactGridLayout.prototype.onResizeStart = function onResizeStart(i, w, h, _ref4) {
+  var e = _ref4.e,
+      node = _ref4.node;
+  var layout = this.state.layout;
+...</pre></li>
     </ul>
 
 
