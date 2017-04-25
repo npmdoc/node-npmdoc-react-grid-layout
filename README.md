@@ -1,6 +1,6 @@
 # npmdoc-react-grid-layout
 
-#### api documentation for  [react-grid-layout (v0.14.6)](https://github.com/STRML/react-grid-layout)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-grid-layout.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-grid-layout) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-grid-layout.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-grid-layout)
+#### basic api documentation for  [react-grid-layout (v0.14.6)](https://github.com/STRML/react-grid-layout)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-grid-layout.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-grid-layout) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-grid-layout.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-grid-layout)
 
 #### A draggable and resizable grid layout with responsive breakpoints, for React.
 
